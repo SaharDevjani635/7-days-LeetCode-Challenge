@@ -3,12 +3,12 @@
  * @return {Object}
  */
 var expect = function(val) {
-    function toBe(num){
+    const toBe = (num) => {
         if(val === num){
             return true;
         }else throw new Error("Not Equal");
     }
-    function notToBe(num){
+    const notToBe = (num) => {
         if(val !== num){
             return true;
         }else throw new Error("Equal");
